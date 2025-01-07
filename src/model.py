@@ -14,6 +14,7 @@ class Model:
         model = genai.GenerativeModel("gemini-pro")
         try:
             response = model.generate_content(prompt + extra + transcript)
+            print(response)
             return response.text
         except Exception as e:
             response_error = "⚠️ There is a problem with the API key or with python module."
