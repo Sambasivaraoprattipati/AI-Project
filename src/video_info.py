@@ -13,6 +13,7 @@ class GetVideo:
         if "youtube.com" in link:
             pattern = r'youtube\.com/watch\?v=([a-zA-Z0-9_-]+)'
             video_id = re.search(pattern, link).group(1)
+            print(video_id)
             return video_id
         elif "youtu.be" in link:
             pattern = r"youtu\.be/([a-zA-Z0-9_-]+)"
