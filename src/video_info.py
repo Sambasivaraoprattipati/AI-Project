@@ -41,7 +41,7 @@ class GetVideo:
             yt = YouTube(link)
             return yt.title
         except Exception as e:
-            return "⚠️ There seems to be an issue with the YouTube video link provided. Please check the link and try again."
+            return ""
         
     @staticmethod
     def transcript(link):
